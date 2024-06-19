@@ -12,7 +12,7 @@ COPY *.go ./
 
 # Build
 RUN CGO_ENABLED=0 GOOS=linux go build -o /docker-gs-ping
-EXPOSE 8080
+EXPOSE 12345
 
 # Run
 CMD ["/docker-gs-ping"]
